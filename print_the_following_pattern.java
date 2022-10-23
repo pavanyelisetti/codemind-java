@@ -7,15 +7,15 @@ class pattern
         int n=sc.nextInt();
         for(int i=1;i<=n;i++)
         {
-            for(int j=n;j>i;j--)
+            for(int j=1;j<=n-2;j++)
             {
-                System.out.print(" ");
+                 System.out.print(j);   
             }
-            for(int k=1;k<2*i;k++)
+            for(int k=n-3;k>=1;k--)
             {
-                System.out.print(i);
+                 System.out.print(k);
             }
-             System.out.println();
+            System.out.println();
         }
     }
 }
