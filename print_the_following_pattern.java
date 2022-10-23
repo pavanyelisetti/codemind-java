@@ -5,25 +5,21 @@ class pattern
     {
         Scanner sc =new Scanner(System.in);
         int n=sc.nextInt();
-        for(int i=1;i<n;i++)
+        for(int i=1;i<=n;i++)
         {
             for(int j=1;j<=n;j++)
             {
-                if(j==1 || i==j)
+                if(i==j || i+j==n+1)
                 {
-                    System.out.print("*");
+                    System.out.print("x");
                 }
                  else
                 {
-                    System.out.print(" ");
+                    System.out.print("0");
                 }
                 
             }
             System.out.println();
-        }
-        for (int i=1;i<=n;i++)
-        {
-            System.out.print("*");
         }
     }
 }
