@@ -7,19 +7,22 @@ class pattern
         int n=sc.nextInt();
         for(int i=1;i<=n;i++)
         {
-            for(int k=n;k>i;k--)
+            for(int j=n;j>i;j--)
             {
-                System.out.print(" ");
+                 System.out.print(" ");   
             }
-            for(int j=i-1;j>=1;j--)
+            for(int k=1;k<=n;k++)
             {
-                 System.out.print(j);
+                if(i==1 || i==n || k==1|| k==n)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" "); 
+                }
             }
-            for(int l=0;l<i;l++)
-            {
-                System.out.print(l);
-            };
-            System.out.println();;
+            System.out.println();
         }
     }
 }
